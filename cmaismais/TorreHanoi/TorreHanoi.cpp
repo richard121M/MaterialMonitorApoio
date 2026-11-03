@@ -15,8 +15,8 @@ void torre_de_hanoi(int n,char origem,char auxiliar,char destino){
 int main(){
     int n;
     char ori, aux, dest;
-    cin >> n;
-    cin >> ori >> aux >> dest;
+    cin >> n; //pegar o numero de aneis 
+    cin >> ori >> aux >> dest; //pegar as letras correspondente as varetas 
     torre_de_hanoi(n,ori,aux,dest);
     return 0;
 }
