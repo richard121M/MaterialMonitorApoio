@@ -1,6 +1,6 @@
 m = []
-numLinhas = int(input('numero de linhas'))
-numColunas = int(input('numero de colunas'))
+numLinhas = int(input('numero de linhas: '))
+numColunas = int(input('numero de colunas: '))
 
 for  i in range(numLinhas):
     m.append([])
@@ -13,4 +13,6 @@ for  i in range(numLinhas):
     print('[',end='')
     for j in range(numColunas):
         print(m[i][j],end='')
+        if (j < numColunas-1):
+            print(', ',end='')
     print(']')
